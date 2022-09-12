@@ -25,9 +25,9 @@ const Navigator = () =>{
       screenOptions={{
         headerShown : false
       }}
-      initalRouteName={'Test1'}
+      initalRouteName={'Home'}
     >
-      <Stack.Screen name='Test1' component={Test1}/>
+      <Stack.Screen name='Home' component={Home}/>
     </Stack.Navigator>
   </NavigationContainer>
   )

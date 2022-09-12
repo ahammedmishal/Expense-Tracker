@@ -13,6 +13,7 @@ import {
   Button,
   Pressable,
   Alert,
+  StatusBar,
   KeyboardAvoidingView,
 } from 'react-native';
 import {VictoryPie} from 'victory-native';
@@ -303,6 +304,7 @@ const Home = () => {
           paddingHorizontal: SIZES.padding,
           backgroundColor: COLORS.white,
         }}>
+             <StatusBar translucent backgroundColor="transparent" barStyle="dark-content"/>
         <TouchableOpacity
           style={{justifyContent: 'center', width: 50}}
           onPress={() => console.log('Back')}>
@@ -377,9 +379,6 @@ const Home = () => {
             <Text style={{...FONTS.body3, color: COLORS.darkgray}}>
               18% more than last month
             </Text>
-          </View>
-          <View>
-            <Button title="add category" onPress={handleModal} />
           </View>
         </View>
       </View>
